@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="private, max-age=600" >
   <title>ГЛАВПИРОГ</title>
   <link rel="stylesheet" href="css/calendar.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <script type="text/javascript" src="js/calendar.js"></script>
+  <script type="text/javascript" async src="js/calendar.js"></script>
 </head>
 <body>
   <header class="page-header">
@@ -407,19 +408,19 @@
             <option>Китай-город</option>
           </select>
           <input type="text" class="popup__info popup__info--street" placeholder="Улица" required>
-          <input type="number" class="popup__info popup__info--house-number" placeholder="Дом" required>
+          <input type="number" class="popup__info popup__info--house-number" placeholder="Дом" min="1" required>
           <input type="text" class="popup__info popup__info--house-block" placeholder="Строение">
-          <input type="number" class="popup__info popup__info--gate" placeholder="Подъезд">
-          <input type="number" class="popup__info popup__info--floor" placeholder="Этаж">
-          <input type="number" class="popup__info popup__info--flat" placeholder="Кв./офис" required>
-          <input type="text" class="popup__info popup__info--intercom" placeholder="Домофон" required>
+          <input type="number" class="popup__info popup__info--gate" placeholder="Подъезд" min="1">
+          <input type="number" class="popup__info popup__info--floor" placeholder="Этаж" min="1" required>
+          <input type="number" class="popup__info popup__info--flat" placeholder="Кв./офис" min="1" required>
+          <input type="text" class="popup__info popup__info--intercom" placeholder="Домофон">
           <textarea class="popup__info popup__info--comment" placeholder="Если необходимо, вы можете оставить свой комментарий в свободной форме"></textarea>
         </div>
         <div class="popup__detail popup__detail--time">
           <h4 class="popup__user-detail-title popup__user-detail-title--datetime"></h4>
           <input type="text" class="popup__info popup__info--date" placeholder="Дата"
             readonly="readonly" onclick="showcalendar(this)" required>
-          <input type="number" class="popup__info popup__info--time" placeholder="Время" required>
+          <input type="text" class="popup__info popup__info--time" placeholder="Время" required>
           <input type="tel" class="popup__info popup__info--phone" placeholder="Телефон" required>
           <input type="tel" class="popup__info popup__info--phone" placeholder="Доп. телефон">
           <input type="email" class="popup__info popup__info--email" placeholder="E-mail">
@@ -473,7 +474,7 @@
       <span class="basket__cakes-price"></span>
     </div>
   </template>
-  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" async src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" async src="js/script.js"></script>
 </body>
 </html>
