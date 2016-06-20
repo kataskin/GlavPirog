@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="16" viewBox="0 0 12 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #999;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1166" y="1203" width="12" height="16" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#e5a440"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Shopping_bag" data-name="Shopping bag" class="cls-1" d="M1175,1208v-2a3,3,0,0,0-6,0v2h-3v10a1,1,0,0,0,1,1h10a1,1,0,0,0,1-1v-10h-3Zm-4-2a1,1,0,0,1,2,0v2h-2v-2Zm5,11h-8v-7h8v7Z" transform="translate(-1166 -1203)"/>
+</svg>
