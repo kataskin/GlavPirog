@@ -1,0 +1,7 @@
+node_modules/
+Thumbs.db
+.idea
+*.sublime*
+*.log
+*.psd
+*.ai

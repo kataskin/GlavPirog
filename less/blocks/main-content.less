@@ -1,0 +1,235 @@
+.main-content__wrapper {
+  padding: 0 10px;
+  text-align: center;
+  @media @tablet-widths {
+    padding: 0 50px;
+  }
+  @media @desktop-widths {
+    padding: 0 100px;
+  }
+}
+
+.main-content__title {
+  @media (max-height: 480px) {
+    margin: 0px 0 20px;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 100;
+  }
+  margin: 70px 0 100px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 100;
+  text-align: center;
+  text-shadow: 0 2px 1px #000000;
+  @media @tablet-widths {
+    margin: 90px 0 35px;
+    font-size: 70px;
+    line-height: 105px;
+  }
+}
+
+.main-content__btn {
+  display: block;
+  width: 248px;
+  height: 58px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 58px;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #7fb137;
+  &:hover {
+    cursor: pointer;
+    background-color: #faa633;
+  }
+}
+
+.main-content__clients {
+  display: none;
+  @media @desktop-widths and (min-height: 800px) {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    margin-left: -560px;
+  }
+}
+
+.main-content__previos-clients {
+  display: block;
+  width: 14px;
+  height: 53px;
+  background: url("../img/icon/prev.svg") center center no-repeat;
+}
+
+.main-content__next-clients {
+  display: block;
+  width: 14px;
+  height: 53px;
+  background: url("../img/icon/next.svg") center center no-repeat;
+}
+
+
+.main-content__clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1020px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-content__client {
+  width: 25%;
+  text-align: center;
+}
+
+.main-content__achievements {
+  display: none;
+  @media @tablet-widths and (min-height: 780px) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 154px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  @media @desktop-widths {
+    min-width: 1200px;
+  }
+}
+
+.main-content__achievements-wrapper {
+  margin: 0 auto;
+  padding: 0 10px 10px;
+  @media @tablet-widths {
+    padding: 0 100px;
+  }
+  @media @desktop-widths {
+    width: 1000px;
+  }
+}
+
+.main-content__grow-achievements {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  @media @tablet-widths {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.main-content__grow-achievements-item {
+  position: relative;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 25px;
+  padding: 0 0 0 60px;
+  &::before {
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #7fb137;
+    box-shadow:
+      0 0 0 8px rgba(127, 177, 55, 0.3),
+      0 0 0 4px rgba(219, 0, 0, 0.3);
+    animation: none;
+  }
+  &::after {
+    position: absolute;
+    top: 3px;
+    left: 17px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 6px;
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    cursor: default;
+    &::before {
+      animation-name: blink;
+      animation-duration: 1000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+  @media @tablet-widths {
+    &:first-child {
+      margin-right: 90px;
+    }
+  }
+  @media @desktop-widths {
+    margin-top: 20px;
+  }
+}
+
+@keyframes blink {
+  50% {
+    box-shadow:
+      0 0 0 10px rgba(127, 177, 55, 0),
+      0 0 0 6px rgba(219, 0, 0, 0);
+  }
+  51% {
+    box-shadow:
+      0 0 0 0 rgba(127, 177, 55, 0.3),
+      0 0 0 0 rgba(219, 0, 0, 0.3);
+  }
+  100% {
+    box-shadow:
+      0 0 0 8px rgba(127, 177, 55, 0.3),
+      0 0 0 4px rgba(219, 0, 0, 0.3);
+  }
+}
+
+.main-content__work-achievements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px auto 0;
+  padding: 0;
+  list-style: none;
+  @media @desktop-widths {
+    width: 1000px;
+  }
+}
+
+.main-content__achievements-red {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #db0000;
+}
+
+.main-content__achievements-number {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.main-content__achievements-text {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #262626;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Shopping_cart" data-name="Shopping cart" class="cls-1" d="M728.811,1150.41A1,1,0,0,0,728,1150H717.744l-0.761-4.18A1,1,0,0,0,716,1145h-2a1,1,0,0,0,0,2h1.165l1.851,10.18a1,1,0,0,0,.984.82h8a1.007,1.007,0,0,0,.948-0.68l2-6A1.016,1.016,0,0,0,728.811,1150.41Zm-3.532,5.59h-6.444l-0.728-4h8.5ZM724,1159a1,1,0,1,0,1,1A1,1,0,0,0,724,1159Zm-4,0a1,1,0,1,0,1,1A1,1,0,0,0,720,1159Z" transform="translate(-713 -1145)"/>
+</svg>
